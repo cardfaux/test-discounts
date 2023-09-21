@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "test-discounts"
+client_id = "3751052236115c1b1ff7619e71edf63d"
+application_url = "https://wolf-room-plumbing-coast.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_discounts"
+
+[auth]
+redirect_urls = [
+  "https://wolf-room-plumbing-coast.trycloudflare.com/auth/callback",
+  "https://wolf-room-plumbing-coast.trycloudflare.com/auth/shopify/callback",
+  "https://wolf-room-plumbing-coast.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "jameshagood.myshopify.com"

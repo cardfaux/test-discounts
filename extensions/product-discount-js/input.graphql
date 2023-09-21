@@ -1,0 +1,35 @@
+query Input {
+  cart {
+    buyerIdentity {
+      customer {
+        id
+        amountSpent {
+          amount
+          currencyCode
+        }
+        hasAnyTag(tags: ["new_one", "new_james", "bc:currentmember"])
+        hasTags(tags: ["new", "new_james", "bc:currentmember"]) {
+          tag
+          hasTag
+        }
+      }
+    }
+    lines {
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+        }
+      }
+    }
+  }
+  discountNode {
+    metafield(
+      namespace: "$app:volume-discount"
+      key: "function-configuration"
+    ) {
+      value
+    }
+  }
+}
