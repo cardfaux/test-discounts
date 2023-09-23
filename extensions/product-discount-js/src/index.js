@@ -37,9 +37,11 @@ export default /**
   }
 
   const hasTag = input?.cart?.buyerIdentity?.customer?.hasAnyTag;
-  if (hasTag) {
-    console.error('Customer has tag, skipping discount.');
+  if (!hasTag) {
+    console.error('Customer does not have the tag required for this discount.');
     return EMPTY_DISCOUNT;
+  } else if (hasTag) {
+    console.error('Customer has the tag and will get the discount');
   }
 
   const targets = input.cart.lines
