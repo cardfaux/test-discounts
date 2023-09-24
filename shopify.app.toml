@@ -2,7 +2,7 @@
 
 name = "test-discounts"
 client_id = "3751052236115c1b1ff7619e71edf63d"
-application_url = "https://pdt-apps-terminology-keyboard.trycloudflare.com"
+application_url = "https://mlb-coins-newark-exhaust.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,write_discounts"
 
 [auth]
 redirect_urls = [
-  "https://pdt-apps-terminology-keyboard.trycloudflare.com/auth/callback",
-  "https://pdt-apps-terminology-keyboard.trycloudflare.com/auth/shopify/callback",
-  "https://pdt-apps-terminology-keyboard.trycloudflare.com/api/auth/callback"
+  "https://mlb-coins-newark-exhaust.trycloudflare.com/auth/callback",
+  "https://mlb-coins-newark-exhaust.trycloudflare.com/auth/shopify/callback",
+  "https://mlb-coins-newark-exhaust.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
